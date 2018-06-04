@@ -14,3 +14,14 @@ export default (state = initialState, action ) => {
             return state;
     }
 }
+
+
+export function productFilter (products, selected){
+    console.log(selected);
+    switch (selected) {
+      case 'all':
+        return products;
+      default:
+        return products.filter(product => product.category.includes(selected))
+    }
+  }

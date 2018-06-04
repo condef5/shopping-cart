@@ -1,16 +1,7 @@
 import { connect } from "react-redux";
 import ProductList from '../components/ProductList';
 import { addProduct } from '../actions/cart';
-
-function productFilter (products, selected){
-  console.log(selected);
-  switch (selected) {
-    case 'all':
-      return products;
-    default:
-      return products.filter(product => product.category.includes(selected))
-  }
-}
+import { productFilter } from '../reducers/product';
 
 const mapStateToProps = state => {
   return {
