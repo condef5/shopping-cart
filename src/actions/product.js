@@ -1,12 +1,12 @@
 import axios from "axios";
 
-const baseUrl = "http://localhost:4000/products";
+const baseUrl = process.env.REACT_APP_BASE_URL
 
 export function fetchProducts() {
   return function(dispatch) {
     dispatch({ type: "FETCH_PRODUCTS_REQUEST" });
     return axios
-      .get(baseUrl)
+      .get(`${baseUrl}/products`)
       .then(response => {
         dispatch({
           type: "FETCH_PRODUCTS_SUCCESS",
