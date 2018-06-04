@@ -9,6 +9,12 @@ export function removeProduct(id) {
   }
 }
 
+export function removeMessage() {
+  return {
+    type: 'REMOVE_MESSAGE',
+  }
+}
+
 export function addProduct(product) {
   return {
     type: 'ADD_PRODUCT',

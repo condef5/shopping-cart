@@ -12,11 +12,13 @@ export default (state = initialState, action) => {
   switch (action.type) {
     case "ADD_PRODUCT":
       return productRepeat(state.productSelects, action.payload.product) ?
-        { ...state, message: 'Producto repetido'} :
-        { ...state, productSelects: [{...action.payload.product, quantity: 1}, ...state.productSelects], message: '' }
+        { ...state, message: 'Repeated product'} :
+        { ...state, productSelects: [{...action.payload.product, quantity: 1}, ...state.productSelects]}
     case "REMOVE_PRODUCT":
       const newProducts = state.productSelects.filter(item => item.id != action.payload.id)
       return {...state, productSelects: newProducts};
+    case 'REMOVE_MESSAGE':
+      return { ...state, message: ''};
     case "CHANGE_QUANTITY":
       return {}
     default:
