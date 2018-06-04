@@ -23,3 +23,13 @@ export function addProduct(product) {
     }
   }
 }
+
+export function changeQuantity(id, quantity) {
+  return {
+    type: 'CHANGE_QUANTITY',
+    payload: {
+      id,
+      quantity
+    }
+  }
+}

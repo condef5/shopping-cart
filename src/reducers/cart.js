@@ -13,14 +13,20 @@ export default (state = initialState, action) => {
     case "ADD_PRODUCT":
       return productRepeat(state.productSelects, action.payload.product) ?
         { ...state, message: 'Repeated product'} :
-        { ...state, productSelects: [{...action.payload.product, quantity: 1}, ...state.productSelects]}
+        { ...state, productSelects: [{...action.payload.product, quantity: 1}, ...state.productSelects], message: 'Product added'}
     case "REMOVE_PRODUCT":
-      const newProducts = state.productSelects.filter(item => item.id != action.payload.id)
+      var newProducts = state.productSelects.filter(item => item.id != action.payload.id)
       return {...state, productSelects: newProducts, message: 'Remove product'};
     case 'REMOVE_MESSAGE':
       return { ...state, message: ''};
     case "CHANGE_QUANTITY":
-      return {}
+      var newProducts = state.productSelects.map(item => {
+        if (item.id == action.payload.id) {
+          return {...item, quantity: action.payload.quantity }
+        }
+        return item;
+      })
+      return {...state, productSelects: newProducts}
     default:
       return state;
   }
