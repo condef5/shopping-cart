@@ -5,7 +5,7 @@
       "name": "No trust tee",
       "image":
         "https://assets.bigcartel.com/product_images/205902095/No+Truth+Tee.jpg",
-      "price": 20.0,
+      "price": 20.00,
       "category": ["tees"]
     },
     {
@@ -13,28 +13,28 @@
       "name": "Fuck yourself sticker",
       "image":
         "https://assets.bigcartel.com/product_images/179282732/HiGXM0t.png",
-      "price": 3.0,
+      "price": 3.00,
       "category": ["stickers"]
     },
     {
       "id": 3,
       "name": "Samurai Champloo",
       "image": "https://assets.bigcartel.com/product_images/207931261/16.jpg",
-      "price": 150.0,
+      "price": 150.00,
       "category": ["original-art"]
     },
     {
       "id": 4,
       "name": "Trigun",
       "image": "https://assets.bigcartel.com/product_images/207931288/18.jpg",
-      "price": 150.0,
+      "price": 150.00,
       "category": ["original-art"]
     },
     {
       "id": 5,
       "name": "Death Note",
       "image": "https://assets.bigcartel.com/product_images/207931393/26.jpg",
-      "price": 150.0,
+      "price": 150.00,
       "category": ["original-art"]
     },
     {
@@ -42,7 +42,7 @@
       "name": "Inktober 2017 Zine",
       "image":
         "https://assets.bigcartel.com/product_images/207931549/Book1.jpg",
-      "price": 150.0,
+      "price": 150.00,
       "category": ["books"]
     },
     {
@@ -50,14 +50,14 @@
       "name": "Tell No Tales",
       "image":
         "https://assets.bigcartel.com/product_images/194684807/IMG_20170320_112120_01.jpg",
-      "price": 150.0,
-      "category": ["patches"]
+      "price": 150.00,
+      "category": ["pins"]
     },
     {
       "id": 8,
       "name": "No god pin",
-      "image": "https://assets.bigcartel.com/product_images/207931393/26.jpg",
-      "price": 8.0,
+      "image": "https://assets.bigcartel.com/product_images/185777354/IMG_20160930_094611_01.jpg",
+      "price": 8.00,
       "category": ["pins"]
     },
     {
@@ -65,15 +65,15 @@
       "name": "Union plain a5 notebook",
       "image":
         "https://assets.bigcartel.com/product_images/217717048/unionnb.jpeg",
-      "price": 4.0,
-      "category": ["notebook"]
+      "price": 4.00,
+      "category": ["original-art"]
     },
     {
       "id": 10,
       "name": "Did i stutter tee",
       "image":
         "https://assets.bigcartel.com/product_images/196099024/unnamed.jpg",
-      "price": 20.0,
+      "price": 20.00,
       "category": ["tees"]
     }
   ],
@@ -81,12 +81,7 @@
     "tees",
     "stickers",
     "original-art",
-    "original-art",
-    "original-art",
     "books",
-    "patches",
-    "pins",
-    "notebook",
-    "tees"
+    "pins"
   ]
 }

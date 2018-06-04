@@ -1,11 +1,10 @@
-import React from 'react'
-import { render } from 'react-dom'
-import { Provider } from 'react-redux'
-import { ConnectedRouter } from 'react-router-redux'
-import store, { history } from './store'
-import App from './components/App'
-import './index.css'
-
+import React from "react";
+import { render } from "react-dom";
+import { Provider } from "react-redux";
+import { ConnectedRouter } from "react-router-redux";
+import store, { history } from "./store";
+import App from "./components/App";
+import "./styles/main.css";
 
 render(
   <Provider store={store}>
@@ -13,5 +12,5 @@ render(
       <App />
     </ConnectedRouter>
   </Provider>,
-  document.getElementById('root')
-)
+  document.getElementById("root")
+);

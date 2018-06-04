@@ -1,8 +1,12 @@
 import { combineReducers } from 'redux'
 import { routerReducer } from 'react-router-redux'
-import counter from './counter'
+import product from './product'
+import categorie from './categorie.js'
+import cart from './cart.js'
 
 export default combineReducers({
   routing: routerReducer,
-  counter
+  product,
+  categorie,
+  cart
 })

@@ -1,0 +1,38 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: $font;
+  color: $gray;
+  background: $bg-body;
+  font-size: 100%;
+  -webkit-font-smoothing: antialiased;
+}
+
+.header {
+  width: 90%;
+  max-width: 69em;
+  margin: 0 auto;
+  padding: 4em 1.875em 1.875em;
+  text-align: center;
+}
+
+.header__title {
+  font-size: 2.125em;
+  font-weight: 400;
+  line-height: 1.3;
+  margin: 0 0 0.6em 0;
+}
+
+.header__sub-title {
+  font-size: 50%;
+  display: block;
+  color: #4d4d5a;
+}
+
+.page {
+  padding: 0 1.5em;
+}
