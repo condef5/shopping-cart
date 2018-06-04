@@ -1,6 +1,7 @@
 import React from "react";
 import Header from "./Header";
-import { Link } from 'react-router-dom';
+import { Link } from "react-router-dom";
+import Toast from "./Toast";
 
 const ProductsCart = ({ products, removeProduct }) => (
   <div className="cart__container">
@@ -22,7 +23,9 @@ const ProductsCart = ({ products, removeProduct }) => (
         </div>
         <div>
           <input type="number" />
-          <a href="#" onClick={() => removeProduct(product.id)}>Remove</a>
+          <a href="#" onClick={() => removeProduct(product.id)}>
+            Remove
+          </a>
         </div>
         <div>${product.price}.00</div>
       </div>
@@ -35,17 +38,21 @@ const ProductsCart = ({ products, removeProduct }) => (
 );
 
 const Cart = props => {
-  const { products, removeProduct } = props;
+  const { products, removeProduct, message, removeMessage } = props;
   return (
     <div className="page page__cart">
       <Header title="Cart" />
-      {products.length == 0 ?
-        <div className="cart__null">Empty cart</div> :
+      {products.length == 0 ? (
+        <div className="cart__null">Empty cart</div>
+      ) : (
         <ProductsCart products={products} removeProduct={removeProduct} />
-      }
+      )}
       <div className="table__pdt">
         <Link to="/">Continue shopping</Link>
       </div>
+      {message == "" ? null : (
+        <Toast message={message} removeToast={removeMessage} />
+      )}
     </div>
   );
 };
